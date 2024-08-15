@@ -1,4 +1,8 @@
 import streamlit as st
-st.title("Mi primera página")
-st.header("Holappp")
-st.write("Que soeño")
+from PIL import Image 
+
+st.title("HALLOWEEN")
+st.header("This is halloween, this is halloween")
+st.write("Halloween, halloweennn")
+
+image = Image.open("gatito.JPG")

@@ -24,11 +24,11 @@ with col1:
 with col2:
   st.subheader("Esta es la segunda columna")
   modo == st.radio("Pelicula más vieja de Tim Burton", ("Corpse bride", "The nightmare before christmas", "Frankenweenie"))
-  if modo == "Corpse bride"
+  if modo == "Corpse bride":
     st.write("Es la segunda más vieja")
-  if modo == "The nightmare before christmas"
+  if modo == "The nightmare before christmas":
     st.write("Es de las más nuevas")
-  if modo == "Frankenweenie"
+  if modo == "Frankenweenie":
     st.write("sI es la más vieja de las tres")
 
 

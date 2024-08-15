@@ -6,3 +6,4 @@ st.header("This is halloween, this is halloween")
 st.write("Halloween, halloweennn")
 
 image = Image.open("gatito.jpeg")
+st.image(image, caption = "Soeñoo")

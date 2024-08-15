@@ -30,7 +30,10 @@ with col2:
     st.write("Es de las más nuevas")
   if modo == "Frankenweenie":
     st.write("sI es la más vieja de las tres")
-
+    
+with st.sidebar:
+  st.subheader("Configura la mejor pelicula")
+  mod_radio = st.radio("Escoge la pelicula", ("Corpse bride", "The nightmare before christmas", "Frankenweenie"))
 
              
   

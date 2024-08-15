@@ -14,26 +14,27 @@ st.write("El texto escrito es ", texto)
 st.subheader("Ahora usemos 2 columnas")
 
 col1, col2 = st.columns(2)
+
 with col1:
-  st.subheader("Esta es la primera columna")
-  st.write("Las insterfaces multimodales mejoran la experiencia de usuario")
-  resp = st.checkbox("Estoy de acuerdo")
+  st.subheader("Primera columna")
+  st.write("las interfaces multimodales")
+  resp = st.checkbox("KHE")
   if resp:
     st.write("correcto")
 
 with col2:
-  st.subheader("Esta es la segunda columna")
-  modo == st.radio("Pelicula más vieja de Tim Burton", ("Corpse bride", "The nightmare before christmas", "Frankenweenie"))
-  if modo == "Corpse bride":
-    st.write("Es la segunda más vieja")
-  if modo == "The nightmare before christmas":
-    st.write("Es de las más nuevas")
-  if modo == "Frankenweenie":
-    st.write("sI es la más vieja de las tres")
+  st.subheader("segunda columna")
+  modo = st.radio("Que modalidad es la principal en tu interfaz", ("Visual","Auditiva", "Tactil"))
+  if modo =="visual":
+    st.write("La vista es fundamental para tu interfaz")
+  if modo == "auditiva":
+    st.write("La audicion es fundamental para tu interfaz")
+  if modo == "tactil":
+    st.write("El tacto es fundamental para tu interfaz")
     
 with st.sidebar:
-  st.subheader("Configura la mejor pelicula")
-  mod_radio = st.radio("Escoge la pelicula", ("Corpse bride", "The nightmare before christmas", "Frankenweenie"))
-
-             
-  
+  st.subheader("Configure la modalidad")
+  mod_radio = st.radio(
+    "Escoge la modalidad a usar",
+    ("visual", "auditiva", "haptica")
+)

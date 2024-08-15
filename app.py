@@ -5,4 +5,4 @@ st.title("HALLOWEEN")
 st.header("This is halloween, this is halloween")
 st.write("Halloween, halloweennn")
 
-image = Image.open("gatito.JPG")
+image = Image.open("gatito.jpeg")
